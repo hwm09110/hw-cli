@@ -1,0 +1,52 @@
+{
+  "name": "hw-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/main.js",
+  "bin": {
+    "hw-cli": "bin/main.js"
+  },
+  "scripts": {
+    "lint": "eslint \"lib/**/*.{js,ts}\" --fix",
+    "clean": "rm -rf ./dist && mkdir dist",
+    "build": "yarn clean && rollup --config"
+  },
+  "keywords": [],
+  "author": "hwm",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/parser": "^5.59.9",
+    "@typescript-eslint/typescript-estree": "^5.59.9",
+    "chalk": "^4.1.0",
+    "commander": "^10.0.1",
+    "download-git-repo": "^3.0.2",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "execa": "^7.1.1",
+    "figlet": "^1.6.0",
+    "fs-extra": "^11.1.1",
+    "import-global": "^0.1.0",
+    "inquirer": "^8.0.0",
+    "lru-cache": "^5.1.1",
+    "minimist": "^1.2.8",
+    "nunjucks": "^3.2.4",
+    "ora": "^3.4.0",
+    "prettier": "^2.8.8",
+    "request-promise-native": "^1.0.9",
+    "rollup": "^3.23.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "semver": "^7.5.1",
+    "string.prototype.padstart": "^3.1.4",
+    "typescript": "^3.2.2",
+    "valid-filename": "^4.0.0",
+    "validate-npm-package-name": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
